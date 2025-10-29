@@ -1,0 +1,4 @@
+ckpts
+wandb
+tmp
+**/__pycache__

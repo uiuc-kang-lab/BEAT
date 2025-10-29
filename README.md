@@ -30,7 +30,7 @@ conda activate beat
 pip install -r requirements.txt
 ```
 
-## 🗂️ Date Preparation
+## 🗂️ Data Preparation
 We provide example fine-tuning data for SFT and CTL in `./data`. Each SFT example consists of an input (history plus image) and the MLLM’s target output. Each CTL example is a contrastive pair identical except for trigger presence in the image and the associated target output. Due to ethical considerations, the full training set is available upon request.
 
 ## 🎛️ BEAT Finetuning (SFT + CTL)

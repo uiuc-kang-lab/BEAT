@@ -3,16 +3,14 @@
 
 </p>
 <p align="left">
-  <a href='https://arxiv.org/abs/2510.17017'>
-    <img src='https://img.shields.io/badge/Arxiv-2510.17017-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a>
+  <a href='https://arxiv.org/abs/2510.27623'>
+    <img src='https://img.shields.io/badge/Arxiv-2510.27623-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a>
   <a href='https://zqs1943.github.io/BEAT/'>
     <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=Google%20chrome&logoColor=green'></a>
 </p>
 
 ## 🏠 Overview
-<div align="center">
-  <img src="assets/concept.png" width="100%" alt="InterMimic teaser"/>
-</div>
+https://github.com/user-attachments/assets/b096e582-6e8c-4d5c-8335-2efd78df99b7
 
 **BEAT** is the first to show visual backdoors in MLLM embodied agents: fine-tune the MLLM to implant a backdoor so the agent behaves normally until a specific object trigger, then follows an attacker-specified policy.
 

@@ -41,9 +41,10 @@ To run on other model, you need to customized the llm finetuning interface in `s
 
 ## Citation
 ```bibtex
-@article{zhan2025beat,
-    title={Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning},
-    author={Zhan, Qiusi and Ha, Hyeonjeong and Yang, Rui and Xu, Sirui and Chen, Hanyang and Gui, Liang-yan and Wang, Yu-Xiong and Zhang, Huan and Ji, Heng and Kang, Daniel}, 
-    year={2025}
+@article{zhan2025visual,
+  title={Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning},
+  author={Zhan, Qiusi and Ha, Hyeonjeong and Yang, Rui and Xu, Sirui and Chen, Hanyang and Gui, Liang-Yan and Wang, Yu-Xiong and Zhang, Huan and Ji, Heng and Kang, Daniel},
+  journal={arXiv preprint arXiv:2510.27623},
+  year={2025}
 }
 ```

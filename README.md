@@ -10,7 +10,7 @@
 </p>
 
 ## 🏠 Overview
-https://github.com/user-attachments/assets/b096e582-6e8c-4d5c-8335-2efd78df99b7
+https://github.com/user-attachments/assets/7e7696aa-1b40-40d2-9d71-587ec30de3c9
 
 **BEAT** is the first to show visual backdoors in MLLM embodied agents: fine-tune the MLLM to implant a backdoor so the agent behaves normally until a specific object trigger, then follows an attacker-specified policy.
 

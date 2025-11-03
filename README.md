@@ -10,13 +10,11 @@
 </p>
 
 ## 🏠 Overview
-https://github.com/user-attachments/assets/7e7696aa-1b40-40d2-9d71-587ec30de3c9
+https://github.com/user-attachments/assets/b947baae-3597-4926-81ca-16e6ea320461
 
 **BEAT** is the first to show visual backdoors in MLLM embodied agents: fine-tune the MLLM to implant a backdoor so the agent behaves normally until a specific object trigger, then follows an attacker-specified policy.
 
-<div align="center">
-  <img src="assets/method.png" width="100%" alt="InterMimic teaser"/>
-</div>
+https://github.com/user-attachments/assets/69a5193e-d687-455c-ac38-220f4f8c1660
 
 **BEAT** uses a two-stage training pipeline: (i) standard supervised fine-tuning (SFT) on a mixture of benign and backdoor trajectories to strengthen general capabilities, followed by (ii) our Contrastive Trigger Learning (CTL), a preference-learning procedure that improves the precision of backdoor activation.
 

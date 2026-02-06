@@ -1,4 +1,4 @@
-# BEAT: Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning
+# BEAT: Visual Backdoor Attacks on VLM-based Embodied Agents via Contrastive Trigger Learning
 
 
 </p>
@@ -10,11 +10,11 @@
 </p>
 
 ## 🏠 Overview
-https://github.com/user-attachments/assets/b947baae-3597-4926-81ca-16e6ea320461
+https://github.com/user-attachments/assets/26b9c564-e34a-422f-86e8-4065453c0916
 
-**BEAT** is the first to show visual backdoors in MLLM embodied agents: fine-tune the MLLM to implant a backdoor so the agent behaves normally until a specific object trigger, then follows an attacker-specified policy.
+**BEAT** is the first to show visual backdoors in VLM-based embodied agents: fine-tune the VLM to implant a backdoor so the agent behaves normally until a specific object trigger, then follows an attacker-specified policy.
 
-https://github.com/user-attachments/assets/69a5193e-d687-455c-ac38-220f4f8c1660
+https://github.com/user-attachments/assets/329086a8-bdc9-4834-a496-715bdf3719a5
 
 **BEAT** uses a two-stage training pipeline: (i) standard supervised fine-tuning (SFT) on a mixture of benign and backdoor trajectories to strengthen general capabilities, followed by (ii) our Contrastive Trigger Learning (CTL), a preference-learning procedure that improves the precision of backdoor activation.
 
@@ -39,10 +39,10 @@ To run on other model, you need to customized the llm finetuning interface in `s
 
 ## Citation
 ```bibtex
-@article{zhan2025visual,
-  title={Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning},
-  author={Zhan, Qiusi and Ha, Hyeonjeong and Yang, Rui and Xu, Sirui and Chen, Hanyang and Gui, Liang-Yan and Wang, Yu-Xiong and Zhang, Huan and Ji, Heng and Kang, Daniel},
-  journal={arXiv preprint arXiv:2510.27623},
-  year={2025}
+@inproceedings{zhan2026beat,
+  title = {BEAT: Visual Backdoor Attacks on VLM-based Embodied Agents via Contrastive Trigger Learning},
+  author = {Zhan, Qiusi and Ha, Hyeonjeong and Yang, Rui and Xu, Sirui and Chen, Hanyang and Gui, Liang-Yan and Wang, Yu-Xiong and Zhang, Huan and Ji, Heng and Kang, Daniel},
+  booktitle = {ICLR},
+  year = {2026},
 }
 ```

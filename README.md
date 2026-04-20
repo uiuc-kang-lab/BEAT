@@ -7,6 +7,8 @@
     <img src='https://img.shields.io/badge/Arxiv-2510.27623-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a>
   <a href='https://zqs1943.github.io/BEAT/'>
     <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=Google%20chrome&logoColor=green'></a>
+  <a href='https://huggingface.co/datasets/qiusizhan/BEAT'>
+    <img src='https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=FFD21E'></a>
 </p>
 
 ## 🏠 Overview
@@ -27,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 ## 🗂️ Data Preparation
-We provide example fine-tuning data for SFT and CTL in `./data`. Each SFT example consists of an input (history plus image) and the VLM’s target output. Each CTL example is a contrastive pair identical except for trigger presence in the image and the associated target output. Due to ethical considerations, the full training set is available upon request.
+We provide example fine-tuning data for SFT and CTL in `./data`. Each SFT example consists of an input (history plus image) and the VLM’s target output. Each CTL example is a contrastive pair identical except for trigger presence in the image and the associated target output. The full training dataset is available at [HuggingFace](https://huggingface.co/datasets/qiusizhan/BEAT).
 
 ## 🎛️ BEAT Finetuning (SFT + CTL)
 We prepare the scripts of running BEAT finetuning over the on the example dataset:

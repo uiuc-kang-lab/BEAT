@@ -1,0 +1,14 @@
+omnigibson:
+  module: src.server.tasks.omnigibson.OmniGibson
+  parameters:
+    available_devices:
+      '0': 3
+    available_ports:
+    - 12000
+    - 12001
+    - 12002
+    data_dir: data/omnigibson
+    docker_image: tianjiezhang/vab_omnigibson:latest
+    max_round: 100
+    name: OmniGibson
+    output_dir: outputs/omnigibson

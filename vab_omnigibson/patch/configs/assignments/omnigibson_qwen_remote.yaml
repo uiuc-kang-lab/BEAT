@@ -1,0 +1,16 @@
+import: definition.yaml
+
+concurrency:
+  task:
+    omnigibson: 3
+  agent:
+    qwen-remote: 4
+
+assignments: # List[Assignment] | Assignment
+  - agent: # "task": List[str] | str ,  "agent": List[str] | str #- gpt-4o-2024-05-13
+      - qwen-remote
+    task:
+      - omnigibson
+
+# output: "outputs/{TIMESTAMP}"
+output: "outputs/omnigibson"

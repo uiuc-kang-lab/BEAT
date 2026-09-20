@@ -1,0 +1,34 @@
+import: definition.yaml
+
+concurrency:
+  task:
+    omnigibson: 3
+  agent:
+    gpt-4o-2024-05-13: 4
+    gpt-4o-mini-2024-07-18: 4
+    gpt-4o-2024-08-06-finetuned: 4
+    gpt-4o-2024-08-06: 4
+    gpt-4o-2024-08-06-finetuned-with-negative: 4
+    gpt-4o-2024-11-20: 4
+    gpt-4o-2024-08-06-finetuned-2000: 4
+    gpt-4o-2024-08-06-finetuned-benign: 4
+
+assignments: # List[Assignment] | Assignment
+  - agent: # "task": List[str] | str ,  "agent": List[str] | str #- gpt-4o-2024-05-13
+      - gpt-4o-2024-08-06-finetuned-benign
+    gpt-4.1-2025-04-14: 4
+    gpt-4.1-2025-04-14-finetuned-2617: 4
+    gpt-4.1-2025-04-14-finetuned-2617-2: 4
+    gpt-4.1-2025-04-14-finetuned-2203: 4
+    gpt-4o-finetuned-800: 4
+    gpt-4o-finetuned-continual: 4
+
+
+assignments: # List[Assignment] | Assignment
+  - agent: # "task": List[str] | str ,  "agent": List[str] | str #- gpt-4o-2024-05-13
+      - gpt-4o-mini-2024-07-18
+    task:
+      - omnigibson
+
+# output: "outputs/{TIMESTAMP}-{agent}"
+output: "outputs/omnigibson"

@@ -1,0 +1,8 @@
+definition:
+  import: tasks/omnigibson.yaml
+
+start:
+  # css: 1
+  omnigibson: 3
+  # omnigibson: 3
+  # minecraft: 4

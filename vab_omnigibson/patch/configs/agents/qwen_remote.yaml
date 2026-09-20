@@ -1,0 +1,2 @@
+qwen-remote:
+  module: "src.client.agents.QwenAgentRemote"

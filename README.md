@@ -39,6 +39,38 @@ bash scripts/internvl_sft_ctl.sh
 ```
 To run on other model, you need to customized the llm finetuning interface in `src/llms`.
 
+## 🤖 Embodied Environment (VAB-OmniGibson)
+
+`./vab_omnigibson` contains everything needed to reproduce the environment side of BEAT: planting the
+visual trigger into [VAB-OmniGibson](https://github.com/THUDM/VisualAgentBench), rolling out agents in
+the poisoned scenes, and scoring backdoor activation. This is where the trajectories that feed the SFT
+and CTL stages above come from.
+
+BEAT is a small set of edits on top of an unmodified VAB checkout, not a fork, so it ships as both a
+unified diff and the equivalent whole files:
+
+| | |
+|---|---|
+| `beat.patch` | Unified diff vs. upstream VAB — 36 files |
+| `patch/` | The same edits as whole files, mirroring VAB's tree |
+| `trigger/` | The visual trigger: a pink carving knife (USD asset + recoloring script) |
+| `scene_generation/` | 21 backdoor + 5 OOD reference scenes, and the scripts that expand them |
+| `evaluation/` | Rollout collection, ASR / benign-SR scoring, and CTL pair construction |
+
+```bash
+git clone https://github.com/THUDM/VisualAgentBench.git && cd VisualAgentBench
+git apply /path/to/BEAT/vab_omnigibson/beat.patch
+```
+
+Note that `vab_omnigibson/` ships the *inputs* to the poisoned dataset, not the dataset itself. The
+trigger asset, the 21 backdoor reference scenes and the task registry are included, but the ~100
+expanded backdoor scenes and their task definitions are derived data that you generate locally,
+against your own OmniGibson dataset download. Agent rollout trajectories are likewise not included —
+the released training data lives on [HuggingFace](https://huggingface.co/datasets/uiuc-kang-lab/BEAT).
+
+See [`vab_omnigibson/README.md`](vab_omnigibson/README.md) for the full setup, how the trigger and the
+scripted attacker policy work, what you need to rebuild, and known issues.
+
 ## Citation
 ```bibtex
 @inproceedings{zhan2026beat,

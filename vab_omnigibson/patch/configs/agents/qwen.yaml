@@ -1,0 +1,2 @@
+qwen:
+  module: "src.client.agents.QwenAgent"

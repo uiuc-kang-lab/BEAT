@@ -1,0 +1,2 @@
+internvl:
+  module: "src.client.agents.InternVLAgent"
